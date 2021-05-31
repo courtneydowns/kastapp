@@ -1,96 +1,99 @@
 body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 .navbar {
-    width: 100%;
-    height: 4em;
-    display: flex; 
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    position: fixed;
-    background-color: transparent;
-    /* text-align:center; */
+  width: 100%;
+  height: 4em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  position: fixed;
+  background-color: transparent;
+  /* text-align:center; */
 }
 
 .logo-wrapper {
-    display: flex; 
-    flex-direction: row;
-    width: 15%;
-    margin-left: 1em;
+  display: flex;
+  flex-direction: row;
+  width: 15%;
+  margin-left: 1em;
 }
 
 .logo-wrapper img {
-    height: 2.6em;
-    margin-top: .8em;
+  height: 2.6em;
+  margin-top: 0.8em;
 }
 
 .logo-wrapper img {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-  }
-  .logo-wrapper img:hover, .logo-wrapper img:focus, .logo-wrapper img:active {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.logo-wrapper img:hover,
+.logo-wrapper img:focus,
+.logo-wrapper img:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 
 .nav-content {
-    display: flex; 
-    flex-direction: row;
-    width: 60%;
-    justify-content: flex-end;
-    align-items: center;
-    align-content: center;
-    padding: 0;
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  padding: 0;
 }
 
 .nav-content a {
-    text-decoration: none;
-    color: white;
-    cursor:pointer;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
 }
 
 /* community and premium and open kast are higher than the other nav bar buttons */
-.nav{
-    height: 100%;
-    width: 60%;
-    list-style: none;
-    display: flex; 
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-    color: white;
-    font-family: Roboto, sans-serif;
-    /* position: relative; */
+.nav {
+  height: 100%;
+  width: 60%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  color: white;
+  font-family: Roboto, sans-serif;
+  /* position: relative; */
 }
 /* 
 #nav-bar{
     position: relative; */
-    /* display: flex; */
-    /* width: 50px;
+/* display: flex; */
+/* width: 50px;
     height: 50px; */
 /* }  */
 
 /* #nav-bar ul {
     position:absolute; */
-    /* z-index: 1; */
-    /* width: 200px;
+/* z-index: 1; */
+/* width: 200px;
     line-height: 1.5; */
-    /* margin-left: -50%; */
+/* margin-left: -50%; */
 /* } */
 /* li{
     position:absolute;
@@ -99,131 +102,130 @@ body {
 } */
 
 .dropdown a {
-    margin-bottom: 2em;
-    /* position: absolute; */
+  margin-bottom: 2em;
+  /* position: absolute; */
 }
 
 .dropdown > .dropdown-content {
-    border-radius: 2px;
-    flex-direction: column;
-    display: none;
-    background-color: white;
-    min-width: 3em;
-    height: auto;
-    padding: 1em;
-    list-style: none;
-    cursor: pointer;
+  border-radius: 2px;
+  flex-direction: column;
+  display: none;
+  background-color: white;
+  min-width: 3em;
+  height: auto;
+  padding: 1em;
+  list-style: none;
+  cursor: pointer;
 }
 
 .dropdown-content li a {
-    color: #777784;
-    line-height: 1.9;
-    text-decoration: none;
-    margin-bottom: 1em;
-    font-family: Roboto, sans-serif;
+  color: #777784;
+  line-height: 1.9;
+  text-decoration: none;
+  margin-bottom: 1em;
+  font-family: Roboto, sans-serif;
 }
 
 .dropdown-content li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .dropdown:hover {
-    margin-top: 5em;
-    /* padding: 0px; */
+  margin-top: 5em;
+  /* padding: 0px; */
 }
 
 .dropdown:hover > .dropdown-content {
-    display: flex;
-    visibility: visible;
+  display: flex;
+  visibility: visible;
 }
 
 .open-kast-1 {
-    height: 25px;
-    width: 102px;
-    margin-top: 1em;
-    margin-left: 1em;
-    padding: 0px;
-    border-radius: 2.75px;
-    box-shadow: inset 0 0 0 1px #ffffff;
-    float: right;
-    font-size: 13px;
-    font-weight: 390;
-    line-height: 28px;
-    letter-spacing: 1.3px;
-    text-align: center;
+  height: 25px;
+  width: 102px;
+  margin-top: 1em;
+  margin-left: 1em;
+  padding: 0px;
+  border-radius: 2.75px;
+  box-shadow: inset 0 0 0 1px #ffffff;
+  float: right;
+  font-size: 13px;
+  font-weight: 390;
+  line-height: 28px;
+  letter-spacing: 1.3px;
+  text-align: center;
 }
 
 .hero-background {
-    background-image: url(./assets/gradient-violet-bg.jpeg);
-    background-size: 100%;
-    background-position: 50% 50%;
-    height: 85vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-
+  background-image: url(./assets/gradient-violet-bg.jpeg);
+  background-size: 100%;
+  background-position: 50% 50%;
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .img-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .laptop-image {
-    display:block;
-    width: 29%;
-    margin-bottom: 2em;
-    padding-top: 4.85em;
+  display: block;
+  width: 29%;
+  margin-bottom: 2em;
+  padding-top: 4.85em;
 }
 
 /* Figure out why font doesn't look the same as on the site even though using same font (i.e. period is a square on my site and a circle on the other site
  */
 .watch-parties-header {
-    font-family: Roboto, sans-serif;
-    font-size: 40px;
-    color: #ffffff;
-    text-align: center;
-    margin: 0 0 28px;
-    font-weight: 475;
-    padding-bottom: 1em;
+  font-family: Roboto, sans-serif;
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 0 28px;
+  font-weight: 475;
+  padding-bottom: 1em;
 }
 
 .watch-parties-paragraph {
-    font-family: Roboto, sans-serif;
-    font-size: 18px;
-    padding-top: .5em;
-    padding-left: 1em;
-    padding-right: 1em;
-    color: #ffffff;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  padding-top: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  color: #ffffff;
 }
 
 .open-kast-2 {
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-    color: #ffffff;
-    width: 3em;
-    padding: .5em 2.5em .5em 2.5em;
-    background-color: #fe9000;
-    height: auto;
-    /* padding: .75em; */
-    text-decoration: none;
-    font-weight: 690;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  width: 3em;
+  padding: 0.5em 2.5em 0.5em 2.5em;
+  background-color: #fe9000;
+  height: auto;
+  /* padding: .75em; */
+  text-decoration: none;
+  font-weight: 690;
 }
 
 .section-green {
-    background-image: url(./assets/green-bg.jpeg);
-    background-size: cover;
-    /* how to get the background so it isn't so zoomed in */
-    background-position: center;
-    height: 54vh;
-    /* background-position: 0px 0px;
+  background-image: url(./assets/green-bg.jpeg);
+  background-size: cover;
+  /* how to get the background so it isn't so zoomed in */
+  background-position: center;
+  height: 54vh;
+  /* background-position: 0px 0px;
     height: 52vh;
     margin-bottom: 0px;
     padding-bottom: 110px;
@@ -232,46 +234,46 @@ body {
 }
 
 .what-is-kast {
-    text-align: center;
-    color: #ffffff;
-    font-family: Roboto, sans-serif;
-    font-size: 44px;
-    padding-top: 2.25em;
-    line-height: 44px;
-    font-weight: 550;
-    margin-top: 1px;
+  text-align: center;
+  color: #ffffff;
+  font-family: Roboto, sans-serif;
+  font-size: 44px;
+  padding-top: 2.25em;
+  line-height: 44px;
+  font-weight: 550;
+  margin-top: 1px;
 }
 
 #layout-grid {
-    max-width: 870px;
-    margin-right: auto;
-    /* margin-bottom: 70px; */
-    margin-left: auto;
-    flex: center;
-    align-items: center;
-    column-gap: 120px;
-    row-gap: 70px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    padding-top: 1.5em;
+  max-width: 870px;
+  margin-right: auto;
+  /* margin-bottom: 70px; */
+  margin-left: auto;
+  flex: center;
+  align-items: center;
+  column-gap: 120px;
+  row-gap: 70px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  padding-top: 1.5em;
 }
 
 .background-white {
-    background-color:white;
-    background-size: cover;
-    background-position: center;
-    height: 50vh;
-    width: 100%;
-    padding-top: 3em;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  width: 100%;
+  padding-top: 3em;
 }
 
 .grid-scheme {
-    display: grid;
-    grid-auto-columns: 1fr;
+  display: grid;
+  grid-auto-columns: 1fr;
 }
 
 .heading {
-    /* margin-top: 2em;
+  /* margin-top: 2em;
     font-size: 24px;
     color: #434146;
     font-weight: 490px;
@@ -279,23 +281,23 @@ body {
     line-height: 34px;
     font-size: 24px;
     font-family: Roboto, sans-serif; */
-    line-height: 36px;
-    margin-top: 2em;
-    color: #434146;
-    font-size: 21px;
-    /* font-weight: 548; */
-    font-family: Roboto, sans-serif;
-    text-align: center;
-    font-weight: 550;
+  line-height: 36px;
+  margin-top: 2em;
+  color: #434146;
+  font-size: 21px;
+  /* font-weight: 548; */
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  font-weight: 550;
 }
 
 .text {
-    font-style: italic;
-    text-align: center;
-    padding-top: 3em;
-    font-size: 18px;
-    font-family: Roboto, sans-serif;
-    color: #434146;
+  font-style: italic;
+  text-align: center;
+  padding-top: 3em;
+  font-size: 18px;
+  font-family: Roboto, sans-serif;
+  color: #434146;
 }
 
 /* .what-is-kast {
@@ -307,41 +309,40 @@ body {
 } */
 
 .kast-summary-1 {
-    color: #ffffff;
-    font-family: Roboto, sans-serif;
-    text-align: center;
-    line-height: 1.75;
-    font-size: 18px;
-    padding-top: 1em;
-    padding-bottom: 1em;
+  color: #ffffff;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  line-height: 1.75;
+  font-size: 18px;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .kast-summary-2 {
-    color: #ffffff;
-    font-family: Roboto, sans-serif;
-    text-align: center;
-    line-height: 1.75;
-    font-size: 18px;
-    /* padding-top: 1em; */
-    padding-bottom: 1em;
+  color: #ffffff;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  line-height: 1.75;
+  font-size: 18px;
+  /* padding-top: 1em; */
+  padding-bottom: 1em;
 }
 
 .open-kast-3 {
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-    color: #ffffff;
-    width: 3em;
-    padding: .5em 2.5em .5em 2.5em;
-    background-color: #fe9000;
-    height: auto;
-    /* padding: .75em; */
-    text-decoration: none;
-    font-weight: 690;
-    margin-left: 54.5em;
-    margin-top: 1em;
-    /* need to figure out how to move open kast button down */
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  width: 3em;
+  padding: 0.5em 2.5em 0.5em 2.5em;
+  background-color: #fe9000;
+  height: auto;
+  /* padding: .75em; */
+  text-decoration: none;
+  font-weight: 690;
+  margin-left: 54.5em;
+  margin-top: 1em;
+  /* need to figure out how to move open kast button down */
 }
-
 
 /* .dropdown-content {
     display: flex;
@@ -354,5 +355,56 @@ body {
    visibility: visible;
   
 } */
- 
 
+/* /////////////////////////////////////////////////////////// */
+
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+}
+
+.logo-wrapper {
+  flex: 2;
+}
+
+.nav-wrapper {
+  flex: 2;
+}
+
+.nav-wrapper ul {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 8px;
+}
+
+.nav-wrapper ul li {
+  flex: 1;
+  list-style-type: none;
+  text-align: center;
+}
+
+.nav-item-title {
+  font-weight: bold;
+  color: white;
+}
+
+ul.nav-item-cats {
+  display: none;
+  margin-top: 8px;
+  padding: 0;
+  padding-bottom: 8px;
+  background-color: white;
+}
+
+ul.nav-item-cats li {
+  padding: 8px 0 0 8px;
+  text-align: left;
+}
+
+.nav-item:hover ul.nav-item-cats {
+  display: block;
+}
